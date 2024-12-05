@@ -6,30 +6,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no" />
     <title>BOT PaaS Website | botpaas</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
       /* General Reset */
-      body, ul {
+      body, ul, h1, p {
         margin: 0;
         padding: 0;
       }
 
-      /* Navigation */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+      }
+
       nav {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #333;
         padding: 10px 20px;
         color: white;
+        position: fixed;
+        top: 0;
       }
 
       .menu {
         flex: 1;
         display: flex;
-        justify-content: center; /* Centers the nav items */
-        align-items: center;
+        justify-content: center;
       }
 
       .menu ul {
@@ -90,6 +99,43 @@
         color: #1e90ff;
       }
 
+      .center {
+        text-align: center;
+      }
+
+      .center .title {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .center .sub_title {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .center .btns {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .center .btns button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #1e90ff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .center .btns button:hover {
+        background-color: #333;
+      }
+
       /* Footer */
       .footer {
         text-align: center;
@@ -120,7 +166,6 @@
         <button>Search</button>
       </div>
     </nav>
-    <div class="img"></div>
     <div class="center">
       <div class="title">BOT PaaS</div>
       <div class="sub_title">Use our Product as a Service</div>
@@ -130,7 +175,7 @@
       </div>
     </div>
     <div class="footer">
-      <p class="copyright">Copyright &copy; 2024 BOT PaaS</p>
+      <p class="copyright">Copyright &copy; 2024 BOT LAB</p>
     </div>
   </body>
 </html>
