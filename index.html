@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
-      /* Inline styles for demonstration. Ideally, add these to style.css. */
-
       /* General Reset */
       body, ul {
         margin: 0;
@@ -27,52 +25,58 @@
         color: white;
       }
 
-      nav .menu {
+      .menu {
+        flex: 1;
         display: flex;
+        justify-content: center; /* Centers the nav items */
         align-items: center;
       }
 
-      nav .logo a {
-        font-size: 24px;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
-        margin-right: 20px;
-      }
-
-      nav ul {
+      .menu ul {
         list-style: none;
         display: flex;
+        padding: 0;
       }
 
-      nav ul li {
-        margin-right: 15px;
+      .menu ul li {
+        margin: 0 15px;
       }
 
-      nav ul li a {
+      .menu ul li a {
         text-decoration: none;
         color: white;
         font-size: 16px;
         transition: color 0.3s ease;
       }
 
-      nav ul li a:hover {
+      .menu ul li a:hover {
         color: #1e90ff;
       }
 
-      nav .search {
+      .logo {
+        flex: 0;
+      }
+
+      .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+
+      .search {
         display: flex;
         align-items: center;
       }
 
-      nav .search input {
+      .search input {
         padding: 5px;
         margin-right: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
       }
 
-      nav .search button {
+      .search button {
         padding: 5px 10px;
         background-color: #1e90ff;
         color: white;
@@ -81,7 +85,7 @@
         cursor: pointer;
       }
 
-      nav .search button:hover {
+      .search button:hover {
         background-color: #333;
         color: #1e90ff;
       }
@@ -100,10 +104,10 @@
   </head>
   <body>
     <nav>
+      <div class="logo">
+        <a href="#">BotPaaS</a>
+      </div>
       <div class="menu">
-        <div class="logo">
-          <a href="#">BotPaaS</a>
-        </div>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
