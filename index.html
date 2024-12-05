@@ -4,10 +4,99 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no"/>
-    <title>BOT PaaS Website| botpaas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit-no" />
+    <title>BOT PaaS Website | botpaas</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+      /* Inline styles for demonstration. Ideally, add these to style.css. */
+
+      /* General Reset */
+      body, ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Navigation */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      nav .menu {
+        display: flex;
+        align-items: center;
+      }
+
+      nav .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #1e90ff;
+      }
+
+      nav .search {
+        display: flex;
+        align-items: center;
+      }
+
+      nav .search input {
+        padding: 5px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      nav .search button {
+        padding: 5px 10px;
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      nav .search button:hover {
+        background-color: #333;
+        color: #1e90ff;
+      }
+
+      /* Footer */
+      .footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #333;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -20,8 +109,11 @@
           <li><a href="#">Services</a></li>
           <li><a href="#">Career</a></li>
           <li><a href="#">Login</a></li>
-          <li><a href="#">Login</a></li>
         </ul>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
       </div>
     </nav>
     <div class="img"></div>
@@ -34,8 +126,7 @@
       </div>
     </div>
     <div class="footer">
-    <!-- <div class="container"> -->
-      <p class="copyright">Copyright &copy; 2024 BOT LAB</p>
+      <p class="copyright">Copyright &copy; 2024 BOT PaaS</p>
     </div>
   </body>
 </html>
